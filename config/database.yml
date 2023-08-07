@@ -1,7 +1,16 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: test_task_explor
+  database: test_task_explor_development
+  pool: 5
+  username: postgres
+  password: postgres@123
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: test_task_explor_test
   pool: 5
   username: postgres
   password: postgres@123
