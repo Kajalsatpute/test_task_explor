@@ -1,4 +1,5 @@
 class Api::V1::BooksController < ApplicationController
+  #index action fetch library and associated books
   def index
     library = Library.find(params[:library_id])
     books = library.books
